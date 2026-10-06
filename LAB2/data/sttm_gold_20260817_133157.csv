@@ -1,5 +1,0 @@
-source_schema,source_table,source_column,target_schema,target_table,target_column,transformation_type,transformation_logic
-silver,sales_data_silver,product_id,gold,sales_by_category_gold,product_id,join,join_left:sales_data:products:product_id
-silver,products_silver,category,gold,sales_by_category_gold,category,passthrough,passthrough
-silver,sales_data_silver,total_amount,gold,sales_by_category_gold,total_sales_revenue,aggregate,SUM(total_amount) AS total_sales_revenue
-silver,sales_data_silver,product_id,gold,sales_by_category_gold,,group_by,category
