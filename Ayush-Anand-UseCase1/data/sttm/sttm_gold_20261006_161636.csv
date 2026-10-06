@@ -1,0 +1,3 @@
+source_schema,source_table,source_column,target_schema,target_table,target_column,transformation_type,transformation_logic
+silver,sales_data_2,category,gold,sales_by_category_gold,category,group_by,
+silver,sales_data_2,total_amount,gold,sales_by_category_gold,total_sales,aggregate,SUM(total_amount) AS total_sales

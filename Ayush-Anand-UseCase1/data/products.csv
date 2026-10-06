@@ -1,0 +1,21 @@
+product_id,product_name,category,unit_cost,supplier
+P001,Wireless Mouse,Electronics,143.56,Acme Supply Co
+P002,Bluetooth Speaker,ELECTRONICS,165.21,Nordic Trading
+P003,USB-C Hub,Elec.,55.32,Acme Supply Co
+P004,Noise-Cancel Headphones,Electronics,151.46,Acme Supply Co
+P005,Stand Mixer,Home & Kitchen,133.18,Acme Supply Co
+P006,Air Fryer,home & kitchen,14.32,Nordic Trading
+P007,Ceramic Knife Set,Home & Kitchen,57.32,Acme Supply Co
+P008,Coffee Grinder,H&K,126.98,Summit Wholesale
+P009,Cotton T-Shirt,Apparel,54.73,Pinewood Distributors
+P010,Denim Jacket,APPAREL,179.6,Acme Supply Co
+P011,Running Shorts,Apparel,168.87,Nordic Trading
+P012,Wool Sweater,Apparel,156.01,Pinewood Distributors
+P013,Yoga Mat,Sporting Goods,66.91,Nordic Trading
+P014,Adjustable Dumbbells,Sporting Goods,210.93,Pinewood Distributors
+P015,Camping Tent,SPORTING GOODS,29.67,Summit Wholesale
+P016,Cycling Helmet,Sport Gds,28.5,Pinewood Distributors
+P017,Building Blocks Set,Toys,135.99,Acme Supply Co
+P018,RC Car,Toys,162.7,Acme Supply Co
+P019,Puzzle 1000pc,TOYS,214.3,Summit Wholesale
+P020,Plush Bear,Toys,24.71,Pinewood Distributors
