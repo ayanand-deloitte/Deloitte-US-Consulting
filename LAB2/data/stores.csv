@@ -1,0 +1,11 @@
+store_id,store_name,region,city,state
+S01,Downtown Flagship,North,Chicago,IL
+S02,Riverside Mall,North,Minneapolis,MN
+S03,Sunset Plaza,West,Los Angeles,CA
+S04,Bay Area Center,West,San Francisco,CA
+S05,Lone Star Outlet,South,Dallas,TX
+S06,Peachtree Corners,South,Atlanta,GA
+S07,Liberty Square,East,Philadelphia,PA
+S08,Harbor View,East,Boston,MA
+S09,Mile High Store,West,Denver,CO
+S10,Capitol Commons,South,Austin,TX

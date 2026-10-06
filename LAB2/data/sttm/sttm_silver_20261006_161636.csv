@@ -1,0 +1,27 @@
+source_schema,source_table,source_column,target_schema,target_table,target_column,transformation_type,transformation_logic
+bronze,sales_data_2_bronze,transaction_id,silver,sales_data_2_silver,transaction_id,passthrough,passthrough
+bronze,sales_data_2_bronze,transaction_date,silver,sales_data_2_silver,transaction_date,date,standardize date to YYYY-MM-DD
+bronze,sales_data_2_bronze,store_id,silver,sales_data_2_silver,store_id,passthrough,passthrough
+bronze,sales_data_2_bronze,product_id,silver,sales_data_2_silver,product_id,passthrough,passthrough
+bronze,sales_data_2_bronze,product_name,silver,sales_data_2_silver,product_name,cleanse,lowercase
+bronze,sales_data_2_bronze,category,silver,sales_data_2_silver,category,cleanse,lowercase
+bronze,sales_data_2_bronze,quantity,silver,sales_data_2_silver,quantity,null_handling,fill null with 0
+bronze,sales_data_2_bronze,unit_price,silver,sales_data_2_silver,unit_price,null_handling,fill null with mean
+bronze,sales_data_2_bronze,total_amount,silver,sales_data_2_silver,total_amount,null_handling,fill null with 0
+bronze,sales_data_2_bronze,customer_segment,silver,sales_data_2_silver,customer_segment,cleanse,lowercase
+bronze,sales_data_2_bronze,payment_method,silver,sales_data_2_silver,payment_method,cleanse,lowercase
+bronze,sales_data_2_bronze,*,silver,sales_data_2_silver,*,deduplicate,deduplicate
+bronze,sales_data_2_bronze,,silver,sales_data_2_silver,surrogate_key,surrogate_key,generate UUID
+bronze,products_3_bronze,product_id,silver,products_3_silver,product_id,passthrough,passthrough
+bronze,products_3_bronze,product_name,silver,products_3_silver,product_name,cleanse,lowercase
+bronze,products_3_bronze,category,silver,products_3_silver,category,cleanse,lowercase
+bronze,products_3_bronze,standard_price,silver,products_3_silver,standard_price,null_handling,fill null with mean
+bronze,products_3_bronze,*,silver,products_3_silver,*,deduplicate,deduplicate
+bronze,products_3_bronze,,silver,products_3_silver,surrogate_key,surrogate_key,generate UUID
+bronze,stores_3_bronze,store_id,silver,stores_3_silver,store_id,passthrough,passthrough
+bronze,stores_3_bronze,store_name,silver,stores_3_silver,store_name,cleanse,title case
+bronze,stores_3_bronze,region,silver,stores_3_silver,region,cleanse,lowercase
+bronze,stores_3_bronze,city,silver,stores_3_silver,city,cleanse,title case
+bronze,stores_3_bronze,state,silver,stores_3_silver,state,cleanse,uppercase
+bronze,stores_3_bronze,*,silver,stores_3_silver,*,deduplicate,deduplicate
+bronze,stores_3_bronze,,silver,stores_3_silver,surrogate_key,surrogate_key,generate UUID
